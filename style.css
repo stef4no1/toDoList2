@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2%;
+  height: 100vh;
+  background-image: url(assets/fondo-acuarela-pintada-mano-forma-cielo-nubes_24972-1095.webp);
+  background-size: cover;
+  overflow: hidden;
+}
+
+h1, h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+main {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 4%;
+  padding: 3% 4%;
+}
+
+main button {
+  background-color: #5eb24f;
+  border: #5eb24f 2px solid;
+  color: #f9f3ed;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 1%;
+}
+
+main button:hover {
+  cursor: pointer;
+  background-color: #579a46;
+  border: #579a46 2px solid;
+}
+
+main button.add::before {
+  font-family: "fontAwesome";
+  content: "\f055";
+}
+
+main button.edit::before {
+  font-family: "fontAwesome";
+  content: "\f044";
+}
+
+main button.scrap::before {
+  font-family: "fontAwesome";
+  content: "\f058";
+}
+
+main button.erase::before {
+  font-family: "fontAwesome";
+  content: "\f12d";
+}
+
+main button.save::before {
+  font-family: "fontAwesome";
+  content: "\f0c7";
+}
+
+main button.notDone::before {
+  font-family: "fontAwesome";
+  content: "\f057";
+}
+
+main input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #f9f3ed;
+  border: #8cb6a6 2px solid;
+  margin-bottom: 1%;
+}
+
+main .emptyAlert {
+  padding: 2%;
+}
+
+main .hidden {
+  visibility: hidden;
+}
+
+main .taskSection {
+  margin-top: 5%;
+}
+
+main .taskSection .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+main .taskSection .taskInput {
+  color: grey;
+  cursor: auto;
+}
+
+main .taskSection .taskInput:not(:-moz-read-only) {
+  cursor: text;
+  color: #8cb6a6;
+  font-weight: 800;
+}
+
+main .taskSection .taskInput:not(:read-only) {
+  cursor: text;
+  color: #8cb6a6;
+  font-weight: 800;
+}
+
+main .taskSection .taskInput.done {
+  text-decoration: line-through;
+}
+
+main .taskSection .btns {
+  width: 30%;
+}
+/*# sourceMappingURL=style.css.map */
